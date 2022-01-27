@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap");
+
+/* NAVBAR */
+.navbar {
+  font-family: Montserrat Subrayada;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+.logo {
+  text-align: center;
+}
+.logo img {
+  text-align: center;
+  width: 7vw;
+}
+
+#logoText {
+  padding-top: 0.5em;
+  color: #c70a1d;
+  font-weight: bolder;
+}
+
+.brand-title {
+  font-size: 2rem;
+  margin: 0.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  text-align: center;
+}
+
+.navbar-links ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 5px;
+}
+
+.navbar-links ul li a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  font-weight: lighter;
+  transition: padding-left 0.5s;
+}
+
+.navbar-links ul li a:hover {
+  padding-left: 30px;
+  color: rgb(206, 7, 7);
+}
+
+.navbar-links li:hover {
+  background-color: rgb(66, 63, 63);
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.search {
+  margin-right: 10px;
+}
+
+.search input {
+  width: 10vw;
+}
+/* Small screen */
+@media (max-width: 800px) {
+  .toggle-button {
+    display: flex;
+  }
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo img {
+    width: 14vw;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    text-align: center;
+  }
+
+  .navbar-links li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-links ul li .link1 {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+  }
+  .navbar-links ul li .link2 {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+  }
+  .navbar-links ul li .link3 {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+  }
+  .navbar-links ul li .link4 {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+  }
+  .navbar-links ul li button .link5 {
+    float: none;
+    position: absolute;
+    top: 90%;
+    left: 68%;
+    transform: translate(50%, -50%);
+  }
+
+  .search {
+    text-align: center;
+    margin-right: 10px;
+  }
+
+  .search input {
+    width: 40vw;
+  }
+
+  .grid-item {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+}
+/* Big screen */
+@media (min-width: 800px) {
+  .navbar-links ul li .link1 {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 21%;
+    transform: translate(110%, -50%);
+  }
+  .navbar-links ul li .link2 {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 34%;
+    transform: translate(20%, -50%);
+  }
+  .navbar-links ul li .link3 {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, -50%);
+  }
+  .navbar-links ul li .link4 {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 68%;
+    transform: translate(50%, -50%);
+  }
+  .navbar-links ul li button .link5 {
+    float: none;
+    position: absolute;
+    top: 90%;
+    left: 69%;
+    transform: translate(50%, -50%);
+  }
+}
+/* ON HOVER ON SMALL SCREEN-LESS EFFECT */
+@media (min-width: 370px) {
+  .navbar-links ul li a:hover {
+    padding-left: 10px;
+  }
+}
+
+/* NAVBAR SLUT*/
+
+/*footer*/
+
+.footer1 {
+  width: 100%;
+  margin-top: 50px;
+  bottom: 5px;
+}
+
+#footerlogo {
+  font-family: Montserrat Subrayada;
+  color: #c70a1d;
+}
+
+.copy {
+  color: white;
+  justify-content: center;
+  display: flex;
+  background-color: black;
+  padding-bottom: 10px;
+}
+
+.footer-container {
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-container > div {
+  background-color: black;
+  color: white;
+  width: 300px;
+  height: 150px;
+  margin: 30px;
+  text-align: center;
+  padding: 5px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.links {
+  list-style-type: none;
+}
+
+@media (max-width: 700px) {
+  .footer-container > div {
+    background-color: black;
+    width: 200px;
+  }
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer a {
+    align-items: center;
+  }
+  .footer1 {
+    position: relative;
+  }
+}
+
+#shoppingCart {
+  display: none;
+}
