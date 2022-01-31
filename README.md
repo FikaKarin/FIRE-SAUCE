@@ -1,5 +1,5 @@
 # FIRE-SAUCE
-Skoluppgift i Javascript 2. . Grupparbete i Javascript 2. Webshop för starka såser.
+Skoluppgift i Javascript 2. . Grupparbete. Webshop för starka såser.
 About - erbjudanden
 Alla produkter - produktlista
 Varukorg - listade produkter via köpknapp.
